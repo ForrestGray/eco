@@ -1,0 +1,115 @@
+<style>
+	/* dynamic values */
+	
+	.view-frame {
+		background:{{page.primary}};
+	}
+	
+	.back a, h1, .title {
+		color: {{page.secondary}} !important;
+	}
+	
+	.next {
+		background:{{page.accent}};
+	}
+	
+	.next:hover {
+		background:{{page.hover}};
+	}
+	
+	.view-frame.ng-leave {
+		background:{{page.primary}};
+	}
+	
+	.view-frame.ng-leave-active {
+		background:{{page.primary}};
+	}
+	
+	button.pinhole {
+		background-color:{{page.accent}};
+	}
+	
+	.tab-selected {
+		border-bottom:2px solid {{page.secondary}} !important;
+	}
+
+	/* other page specific */
+	
+	.column-story {
+		width: 725px;
+	}
+	
+	.form-add {
+		margin-top:2em;
+	}
+
+</style> 
+<div class="container-fluid" id="define">
+	<div class="header">
+		<div class="title">
+		</div>
+	</div>
+	<div class="content" style="height:100%;">
+		<div class="subheader">
+			<h1>
+				<span style="color:#D1C4E9;">{{page.title}}</span> Personas
+			</h1>
+			<p class="label">
+				Project
+			</p>
+		</div>
+		
+		<ul class="tabs">
+			<li><a href ng-click="tab=1" ng-class="{'tab-selected': tab==1}" accesskey="1">Personas</a></li>
+			<li><a href ng-click="tab=2" ng-class="{'tab-selected': tab==2}" accesskey="2">Guidelines</a></li>
+		</ul>
+		
+		<div ng-show="tab==1" class="panel">
+		
+			<table class="stories data">
+				<tr ng-repeat="persona in page.personas">
+					<td><img ng-src="{{persona.picture}}">{{persona.name}}</td>
+					<td>{{persona.description}}<br>{{persona.goals}}</td>
+				</tr>
+			</table>
+			
+			<fieldset class="form-add">
+			
+				<datalist id="team-members"> 
+					<option value="{{member.name}}" ng-repeat="member in page.members">
+				</datalist> 
+				
+				<datalist id="user-personas"> 
+					<option value="{{persona.name}}" ng-repeat="persona in page.personas">
+				</datalist> 
+				
+				<table class="data" style="margin-top:.5em;">
+					<tr>
+						<td class="column-story"> 
+							<input id="persona-name" name="persona-name" placeholder="Name" class="inline column-name">
+							<input id="description" placeholder="Description" class="inline">
+							<input id="goals" placeholder="Goals" class="inline">
+						</td>
+						<td class="column-team"> 
+							<input id="team" name="team" list="team-members" placeholder="Author" class="inline column-name">
+						</td>
+						<td> <button ng-click="addMore()" accesskey="a" class="pinhole"></button> </td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		
+		<div ng-show="tab==2" class="panel">
+			<table class="guidelines data" style="max-width:650px;">
+				<tr ng-repeat="guideline in page.guidelines">
+					<td class="copy-primary guideline">{{$index+1}}.</td>
+					<td class="copy-secondary"><span class="copy-primary">{{guideline.rule}}</span>{{guideline.copy}}</td>
+				</tr>
+			</table>
+
+		</div>
+		
+		<p class="footer" style="display:none;"><a back class="next">Back</a></p>
+	</div>
+	<div id="canvas"></div>
+</div>

@@ -1,0 +1,303 @@
+/* app css stylesheet */
+
+* {
+  -webkit-perspective:3000;
+  transform-style: preserve-3d;
+	}
+
+a {
+	color: #ffd600;
+	text-decoration: none;
+	}
+	
+a:hover {
+  text-decoration: none;
+  border-color: white;
+}
+
+body,
+html,
+.container-fluid,
+.view-container,
+.view-frame {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  font: 300 16px "Lato" sans-serif;
+  color: #333;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+
+body, html, div {
+	padding:0;
+	margin:0;
+}
+
+fieldset {
+	border:1px solid #ccc;
+	border-radius: 6px;
+	background:#f9f9f9;
+}
+
+button.pinhole {
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+	font-size:1.5em;
+	background:transparent url(../img/plus.png) center center no-repeat;
+	background-size: 50%;
+	border:none;
+}
+
+button.pinhole:focus {
+	outline:none;
+}
+
+#canvas {
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  width: 100%;
+  height: 400%;
+  background: #f6f6f6;
+  background-image:url(../img/noise.png);
+  opacity: 1;
+}
+
+.container-fluid {
+  padding:0;
+}
+	
+.content {
+  width: 60%;
+  max-width: 850px;
+  margin: auto;
+  padding-top: 12px;
+  text-align: left;
+}
+
+.content p {
+  font-size: 1.125em;
+  line-height: 145%;
+}
+
+.column-count {
+	width: 32px;
+	text-align: right;
+	font-weight: 500;
+	opacity: 0.5;
+}
+
+.copy-primary {
+	font-weight: 300;
+	opacity: 1;
+	line-height:140%;
+	padding-bottom:.25em;
+	padding-top:.75em;
+	color:#333;
+	color:black;
+	display:block;
+}
+
+.copy-primary:first-child {
+	padding-top: 0;
+}
+
+.copy-secondary {
+	color:#999 !important;
+}
+
+.copy-subordinate {
+	padding-left: 1em;
+	font-size:75%;
+}
+
+.footer {
+	white-space:nowrap;
+	position: fixed;
+	bottom:80px;
+}
+
+h1 {
+  margin-top: 32px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  width: 100%;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+input.inline {
+	width: auto;
+	margin:0 .35em;
+	border-radius: 4px;
+	border:none;
+	border-bottom:1px solid #ccc;
+	padding:2px 4px;
+	display:inline-block;
+	background:transparent;
+}
+
+input::-webkit-input-placeholder {
+	font-style: italic;
+}
+
+input.column-name {
+	width:125px;
+}
+
+p.label {
+	text-transform: uppercase;
+	font-size:12px;
+	font-weight:200;
+	opacity:0.5;
+	padding:0;
+}
+
+td.labels, th.labels {
+	text-transform: uppercase;
+	font-size:12px;
+	font-weight:300;
+	opacity:1;
+	padding:0;
+}
+
+li {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.next,
+.next-b {
+  display: inline-block;
+  min-width: 90px;
+  padding: 5px;
+  margin-top: 3em;
+  color: #fff;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-transition: all .5s;
+  font-size:1em !important;
+}
+
+.next:hover,
+.next-b:hover {
+	color: white;
+}
+
+a.next {
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+
+p {
+	color: #424242;
+	font-weight: 300;
+	line-height: 145%;
+}
+
+.panel {
+	opacity:1;
+	position:absolute;
+	background:transparent;
+}
+	
+.panel.ng-hide-add.ng-hide-add-active,
+.panel.ng-hide-remove.ng-hide-remove-active {
+	-webkit-transition: all linear .5s;
+	transition: all linear .5s;
+}
+
+.panel.ng-hide {
+	opacity: 0;
+}
+
+.shift {
+  margin-left: 0px;
+	}
+	
+.subheader {
+	margin-bottom:24px;
+}
+
+.tabs {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	}
+.tabs li {
+	display: inline-block;
+	width: 160px;
+	margin-right:.25em;
+	}
+.tabs li a {
+	color: #333;
+	text-decoration: none;
+	display:block;
+	padding-bottom:4px;
+	padding-left:2px;
+	border-bottom:1px solid #ddd;
+	text-transform: uppercase;
+	font-size: .75em;
+}
+.tabs li a:focus {
+	outline: none;
+	}
+
+table.data td, table.data th {
+	padding-right:1em;
+	padding-bottom:.5em;
+}
+table.data td:first-child, table.data th:first-child {
+	padding-right:.5em;
+
+}
+td {
+	vertical-align: top;
+}
+
+.title {
+  top: 0px;
+  width: 60%;
+  height: 32px;
+  max-width: 850px;
+  margin: 0px auto 0 auto;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: right;
+  padding: 5px 0;
+  background: transparent url(../img/svg/logo-negative.svg) 0px 3px no-repeat;
+  background-size: 100px;
+  opacity: 0.5;
+}
+
+.title::after {
+	content: "Corporate Design System";
+}
+.view-frame {
+	transition:all .8s;
+	-webkit-transition:all .8s;
+	}
+
+

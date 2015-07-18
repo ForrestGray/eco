@@ -1,0 +1,68 @@
+{
+    "id": "2", 
+    "title": "WonderWidgets", 
+    "primary": "#673ab7",
+    "secondary": "#B39DDB",
+    "accent": "#FB8C00",
+    "hover": "#F57C00",
+    "next": "#FF9800",
+    "members": [
+    	{"name": "Aparajito",
+    	"id": "1"
+    	},
+    	{"name": "Evan",
+    	"id": "2"
+    	},
+    	{"name": "Forrest",
+    	"id": "3"
+    	}
+	],
+    "personas": [
+    	{"name": "Fred",
+    	"id": "1"
+    	},
+    	{"name": "Jim",
+    	"id": "2"
+    	},
+    	{"name": "Mary",
+    	"id": "3"
+    	}
+	],
+    "stories": [
+    	{"feature": "attachment filtering",
+    	 "benefit": "process documents more quickly",
+    	 "user": "Mary",
+    	 "team": "Forrest"
+    	 },
+    	{"feature": "keyboard shortcuts",
+    	 "benefit": "save time",
+    	 "user": "Jim",
+    	 "team": "Evan"
+    	 },
+    	{"feature": "larger type",
+    	 "benefit": "read more efficiently",
+    	 "user": "Fred",
+    	 "team": "Aparajito"
+    	 }
+		],
+	"guidelines": [
+    	{"rule": "Start with the user.",
+    	"copy": "A user story describes how a customer or a user employs the product; tell the stories from the user perspective to capture a specific piece of functionality."
+    	},
+    	{"rule": "Use personas to discover the right stories.",
+    	"copy": "The persona goals help you discover your stories. Ask yourself: What functionality does the product have to provide to meet the goal of the personas?"
+    	},
+    	{"rule": "Write stories collaboratively.",
+    	"copy": "A user story is a communication tool; the product owner and the team should discuss the stories, or even better, write them together."
+    	},
+    	{"rule": "Keep stories simple and concise.",
+    	"copy": "Write stores for easy understanding; avoid confusing or ambiguous terms."
+    	},
+    	{"rule": "Start with epics, decompose into stories.",
+    	"copy": "Epics capture coarse-grained product functionality; these are further broken down until they are story-ready - clear, feasible, with an effective way to determine when done."
+    	},
+    	{"rule": "Don't rely solely on user stories.",
+    	"copy": "Creating a great user experience requires more than writing user stories. Consider user journeys and interactions, visual design, and nonfunctional product properties of the product. This holistic description increases the chances of creating a product with the right user experience."
+    	}
+	]
+}

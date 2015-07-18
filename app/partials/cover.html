@@ -1,0 +1,42 @@
+<style>
+	.view-frame {
+		background:{{page.primary}};
+		}
+	.back a, h1, .title {
+		color: {{page.secondary}} !important;
+		}
+	.next {
+		background:{{page.accent}};
+		}
+	.next:hover {
+		background:{{page.hover}};
+		}
+	.view-frame.ng-leave {
+		background:{{page.primary}};
+	}
+	.view-frame.ng-leave-active {
+		background:{{page.primary}};
+	}
+</style>
+<div class="container-fluid" id="cover">
+
+	<div class="header">
+	  <div class="title"></div>
+	</div>
+	
+	<div class="content">
+	<h1 class="shift">{{page.title}}</h1>
+	<p class="quoted"><img src="./img/svg/quote-open.svg" class="quote" style="margin-left:-50px;margin-top:-24px;">{{page.quote}}<img src="./img/svg/quote-close.svg" class="quote" style="margin-bottom:-14px;"></p>
+	<p class="attribution">{{page.attribution}}</p>
+	<div class="container x4">
+		<ul>
+			<li>US
+				<ul>
+					<li><a href="#/project">WonderWidgets</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div id="canvas"></div>
+</div>

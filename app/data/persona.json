@@ -1,0 +1,60 @@
+{
+    "id": "2", 
+    "title": "WonderWidgets", 
+    "primary": "#673ab7",
+    "secondary": "#B39DDB",
+    "accent": "#FB8C00",
+    "hover": "#F57C00",
+    "next": "#FF9800",
+    "members": [
+    	{"name": "Aparajito",
+    	"id": "1"
+    	},
+    	{"name": "Evan",
+    	"id": "2"
+    	},
+    	{"name": "Forrest",
+    	"id": "3"
+    	}
+	],
+    "personas": [
+    	{"name": "Fred",
+    	"id": "1",
+    	"description": "Description of Fred.",
+    	"goals": "Fred's goals.",
+    	"picture": "./img/personas/1.jpg"
+    	},
+    	{"name": "Jim",
+    	"id": "2",
+    	"description": "Description of Jim.",
+    	"goals": "Jim's goals.",
+    	"picture": "./img/personas/2.jpg"
+    	},
+    	{"name": "Mary",
+    	"id": "3",
+    	"description": "Description of Mary.",
+    	"goals": "Mary's goals.",
+    	"picture": "./img/personas/3.jpg"
+    	}
+	],
+	"guidelines": [
+    	{"rule": "Guideline 1.",
+    	"copy": "Context."
+    	},
+    	{"rule": "Guideline 2.",
+    	"copy": "Context."
+    	},
+    	{"rule": "Guideline 3.",
+    	"copy": "Context."
+    	},
+    	{"rule": "Guideline 4.",
+    	"copy": "Context."
+    	},
+    	{"rule": "Guideline 5.",
+    	"copy": "Context."
+    	},
+    	{"rule": "Guideline 6.",
+    	"copy": "Context."
+    	}
+	]
+}

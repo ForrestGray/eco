@@ -1,0 +1,10 @@
+{
+    "id": "3", 
+    "title": "Architect", 
+    "content": "Interaction design and information architecture begin to take shape. The relationships between elements are refined; the data model is created and navigation strategy is developed. Technical or design blockers are identified and resolved; prototyping is used as needed for proof of concept. This phase creates the structure on which the look and feel of the project is applied.",
+    "primary": "#4caf50",
+    "secondary": "#A5D6A7",
+    "accent": "#FF9100",
+    "hover": "#F57C00",
+    "next": "#ff9800"
+}

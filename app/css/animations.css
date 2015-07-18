@@ -1,0 +1,86 @@
+/*
+ * animations css stylesheet
+ */
+
+/* cross fading between routes with ngView */
+
+.view-container {
+  position: relative;
+}
+
+.view-frame.ng-enter,
+.view-frame.ng-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.view-frame.ng-enter {
+  -webkit-animation: 1s fade-in;
+  -moz-animation: 0.5s fade-in;
+  -o-animation: 0.5s fade-in;
+  animation: 1s fade-in;
+  z-index: 100;
+}
+
+.view-frame.ng-leave {
+  -webkit-animation: .75s fade-out linear;
+  -moz-animation: 0.5s fade-out;
+  -o-animation: 0.5s fade-out;
+  animation: 1s fade-out linear;
+  z-index: 101;
+}
+
+.content.ng-enter, .view-frame.ng-enter .content  {
+  -webkit-animation: 1s zoom-content-in ease-in;
+}
+
+@-webkit-keyframes zoom-content-in {
+  from { opacity: 0; -webkit-transform: translateZ(-500px) scale(0.75); }
+  to { opacity: 1;-webkit-transform: translateZ(0px) scale(1);}
+}
+
+
+.content.ng-leave, .view-frame.ng-leave .content  {
+  -webkit-animation: 1s zoom-content-out ease-in;
+}
+
+@-webkit-keyframes zoom-content-out {
+  from { opacity: 1; -webkit-transform: translateZ(0px) scale(1); }
+  to { opacity: 0;-webkit-transform: translateZ(500px) scale(1.5); }
+}
+
+
+
+/* comp animations */
+
+.image-1-of-2 {
+  -webkit-animation: 10s fade-image-1-of-2 infinite;
+
+}
+.image-2-of-2 {
+  -webkit-animation: 10s fade-image-2-of-2 infinite;
+
+}
+
+
+@-webkit-keyframes fade-image-1-of-2 {
+  0% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  90% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade-image-2-of-2 {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.quoted, .content p, h1, .pane, .pane-b {
+	-webkit-transition: all .5s;
+}

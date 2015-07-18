@@ -1,0 +1,38 @@
+<style>
+	.view-frame {
+		background:{{page.primary}};
+		}
+	.back a, h1, .title {
+		color: {{page.secondary}} !important;
+		}
+	.next-b {
+		background:{{page.accent}};
+		}
+	.next-b:hover {
+		background:{{page.hover}};
+		}
+	.view-frame.ng-leave {
+		background:{{page.primary}};
+	}
+	.view-frame.ng-leave-active {
+		background:{{page.primary}};
+	}
+</style>
+
+
+<div class="container-fluid" id="implement">
+	<div class="header">
+	  <div class="title"></div>
+	  <div class="back"><a back>Back</a></div>
+	</div>
+	<div class="content">
+	<h1 class="shift">{{page.title}}</h1>
+	<div class="pane-b">
+	<img src="./img/png/implement.png" class="image-1-of-2">
+	<img src="./img/png/implement-b.png" class="image-2-of-2">
+	</div>
+	<p>{{page.content}}</p>
+	<p class="footer"><a href="#/implement" class="next-b">Next</a>&nbsp;<span class="nav">&bull;&bull;&bull;&bull;<span style="color:{{page.primary}};">&bull;</span></p>
+	</div>
+	<div id="canvas"></div>
+</div>

@@ -1,0 +1,10 @@
+{
+    "id": "5", 
+    "title": "Implement", 
+    "content": "Design guidelines and optimized visual assets are created and delivered for production. Graphics and content are combined with code, adding functionality and creating the final deliverable. Quality assurance and user testing is performed to produce a robust and polished final product.",
+    "primary": "#9C27B0",
+    "secondary": "#CE93D8",
+    "accent": "#00BCD4",
+    "hover": "#00ACC1",
+    "next": "#F44336"
+}

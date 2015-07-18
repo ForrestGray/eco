@@ -1,0 +1,10 @@
+{
+    "id": "4", 
+    "title": "Design", 
+    "content": "The project comes to life as color palette, typography, visual and interaction design are added. Iterative exploration of user experience, brand management, and usability take place.  The results capture the look and feel of the final application with high fidelity compositions and interactive prototypes. User testing is done using developed prototypes; style guides are developed to ensure future consistency and continuity.",
+    "primary": "#ff9800",
+    "secondary": "#FFE082",
+    "accent": "#AB47BC",
+    "hover": "#9C27B0",
+    "next": "#9C27B0"
+}

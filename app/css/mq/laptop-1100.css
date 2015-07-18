@@ -1,0 +1,6 @@
+            @media screen and (max-width: 1200px) {
+				.content p.quoted {
+					font-size:1em;
+					padding-right:60px;
+				}
+            }

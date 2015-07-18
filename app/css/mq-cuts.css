@@ -1,0 +1,188 @@
+/* media queries */
+
+
+/* laptop-1100 */
+
+@media screen and (max-width: 1200px) {
+	.content p.quoted {
+		font-size:1em;
+		padding-right:60px;
+	}
+}
+
+/* tablet-1000 */
+
+@media screen and (max-width: 1000px) {
+.content p.quoted {
+	font-size:1em;
+	padding-right:60px;
+}
+
+h1 {
+	font-size: 62px;
+	margin-bottom: 38px;
+	margin-top: 32px;
+}
+.content p {
+  font-size: 1.0em;
+  line-height: 145%;
+}
+.nav {
+padding-left: 3em;
+}
+
+.pane,
+.pane-b {
+margin: 8px 0 12em 3em !important;
+}
+
+}
+
+/* tablet-800 */
+
+@media screen and (max-width: 800px) {
+	.content p.quoted {
+		font-size:1em;
+		padding-right:60px;
+	}
+	
+	h1 {
+		font-size: 56px;
+		margin-bottom: 58px;
+		margin-top: 32px;
+	}
+	.content, .title {
+		width: 70%;
+	}
+	.content p {
+	  font-size: 1.0em;
+	  line-height: 145%;
+	}
+	.nav {
+	   padding-left: 3em;
+letter-spacing: .75em;
+	}
+
+.pane,
+.pane-b {
+margin: 8px 0 12em 3em !important;
+}
+
+}
+
+
+/* tablet-700 */
+
+@media screen and (max-width: 700px) {
+	.content p.quoted {
+		font-size:1em;
+		padding-right:60px;
+	}
+	
+	h1 {
+		font-size: 56px;
+		margin-bottom: 58px;
+		margin-top: 32px;
+	}
+	.content, .title {
+		width: 70%;
+	}
+	.content p {
+	  font-size: 1em;
+	  line-height: 145%;
+	}
+	.nav {
+	   padding-left: 2em;
+letter-spacing: .75em;
+	}
+.pane,
+.pane-b {
+margin: 8px 0 12em 3em !important;
+}
+
+}
+
+/* tablet-600 */
+
+@media screen and (max-width: 600px) {
+	.content p.quoted {
+		font-size:1em;
+		padding-right:60px;
+	}
+	
+	h1 {
+		font-size: 56px;
+		margin-bottom: 58px;
+		margin-top: 32px;
+	}
+	.content, .title {
+		width: 70%;
+	}
+	.content p {
+	  font-size: 1em;
+	  line-height: 145%;
+	}
+	.nav {
+	   padding-left: 2em;
+	letter-spacing: .75em;
+	}
+	.pane,
+	.pane-b {
+	display:none;
+	}
+	
+}
+
+/* phone-400 */
+@media screen and (max-width: 400px) {
+	#canvas {
+	top: 120px;
+	}
+	.content p.quoted {
+	font-size:1em;
+	padding-right:0px;
+	}
+	.content {
+	margin-top: 64px;
+	}
+	
+	h1 {
+	font-size: 32px;
+	margin-bottom: 36px;
+	margin-top: 32px;
+	font-weight:100;
+	}
+	.content, .title {
+	width: 70%;
+	}
+	.content p {
+	font-size: 1em;
+	line-height: 140%;
+	}
+	.nav {
+	padding-left: 2em;
+	letter-spacing: .75em;
+	}
+	
+	.next,
+	.next-b {
+	
+	min-height:40px;
+	min-width:120px;
+	font-size:1.25em !important;
+	font-weight:400;
+	padding-top:8px;
+	margin-top:2em;
+	}
+	.pane,
+	.pane-b {
+	margin: 0px 0 12em 3em;
+	display:none;
+	}
+	
+	.quote {
+	-webkit-transform: scale(0.7);
+	}
+	
+	
+}

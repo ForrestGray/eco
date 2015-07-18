@@ -1,0 +1,11 @@
+{
+    "id": "1", 
+    "title": "Projects", 
+    "quote": "Chaos and clutter are failures of design, not attributes of information.",
+    "attribution": "Edward Tufte",
+    "primary": "#00bcd4",
+    "secondary": "#80DEEA",
+    "accent": "#FBC02D",
+    "hover": "#F9A825",
+    "next": "#2196F3"
+}

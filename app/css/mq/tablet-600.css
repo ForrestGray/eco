@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+	.content p.quoted {
+		font-size:1em;
+		padding-right:60px;
+	}
+	
+	h1 {
+		font-size: 56px;
+		margin-bottom: 58px;
+		margin-top: 103px;
+	}
+	.content, .title {
+		width: 70%;
+	}
+	.content p {
+	  font-size: 1em;
+	  line-height: 145%;
+	}
+	.nav {
+	   padding-left: 2em;
+	letter-spacing: .75em;
+	}
+	.pane,
+	.pane-b {
+	display:none;
+	}
+	
+}

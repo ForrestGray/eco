@@ -1,0 +1,25 @@
+            @media screen and (max-width: 1000px) {
+				.content p.quoted {
+					font-size:1em;
+					padding-right:60px;
+				}
+				
+				h1 {
+					font-size: 62px;
+  					margin-bottom: 38px;
+  					margin-top: 108px;
+				}
+				.content p {
+				  font-size: 1.0em;
+				  line-height: 145%;
+				}
+.nav {
+   padding-left: 3em;
+}
+
+.pane,
+.pane-b {
+  margin: 8px 0 12em 3em !important;
+}
+
+            }

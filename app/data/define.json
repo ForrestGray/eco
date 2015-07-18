@@ -1,0 +1,10 @@
+{
+    "id": "2", 
+    "title": "Define", 
+    "content": "Successful design starts with clearly defining the problem being solved. First we study the domain and develop an understanding of your brand and audience. Goals, timelines, and delivery channels are clearly defined. User testing and persona development may be used to better focus strategy. Depending on project scale this phase can take from a few hours to several weeks.",
+    "primary": "#2196F3",
+    "secondary": "#90CAF9",
+    "accent": "#7CB342",
+    "hover": "#689F38",
+    "next": "#4caf50"
+}
