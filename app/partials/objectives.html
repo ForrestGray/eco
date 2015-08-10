@@ -49,6 +49,23 @@
 	}
 
 </style> 
+<script>
+	function changeEditable(which){
+		var locked = document.getElementById(which).contentEditable;
+		if (locked){
+			// document.getElementById(which).contentEditable = "false";
+		} else {
+			// document.getElementById(which).contentEditable = "true";
+		}
+		// alert('hit');
+	}
+
+	function makeEditable(which){
+		$("#objective").addClass('edit');
+	}
+
+</script>
+
 <div class="container-fluid" id="define">
 	<div class="header">
 		<div class="title" click-link="/cover">
@@ -57,7 +74,7 @@
 	<div class="content" style="height:100%;">
 		<div class="subheader">
 			<h1 click-link="/project">
-				<span style="color:#D1C4E9;">{{page.title}}</span> User Stories
+				<span style="color:#D1C4E9;">{{page.title}}</span> Objectives
 			</h1>
 			<p class="label">
 				Project
@@ -65,16 +82,16 @@
 		</div>
 		
 		<ul class="tabs">
-			<li><a href ng-click="tab=1" ng-class="{'tab-selected': tab==1}" accesskey="1">Stories</a></li>
+			<li><a href ng-click="tab=1" ng-class="{'tab-selected': tab==1}" accesskey="1">Objectives</a></li>
 			<li><a href ng-click="tab=2" ng-class="{'tab-selected': tab==2}" accesskey="2">Guidelines</a></li>
 		</ul>
 		
 		<div ng-show="tab==1" class="panel">
 		
 			<table class="stories data">
-				<tr ng-repeat="story in page.stories">
+				<tr ng-repeat="objective in page.objectives"  ng-click="select(objective)" ng-class="itemClass(objective)">
 					<td class="column-count">{{$index+1}}.</td>
-					<td>As {{story.user}}, I want {{story.feature}} so I can {{story.benefit}}.<span class="copy-subordinate author">({{story.team}})</span></td>
+					<td><div id="objective1" contentEditable="true">{{objective.goal}}</div></td>
 					<td>
 						<button type="button" class="btn btn-default btn-sm">
           					<span class="glyphicon glyphicon-edit"></span> Edit
@@ -87,24 +104,12 @@
 			</table>
 			
 			<fieldset class="form-add" style="position:relative;">
-				<legend style="display:inline;position:absolute;top:-20px;border:none;text-transform:uppercase;font-size:12px;">Add user story</legend>
-				<datalist id="team-members"> 
-					<option value="{{member.name}}" ng-repeat="member in page.members">
-				</datalist> 
-				
-				<datalist id="user-personas"> 
-					<option value="{{persona.name}}" ng-repeat="persona in page.personas">
-				</datalist> 
-				
+				<legend style="display:inline;position:absolute;top:-20px;border:none;text-transform:uppercase;font-size:12px;">Add objective</legend>
+
 				<table class="data" style="margin-top:.75em;">
 					<tr>
-						<td class="column-count">&nbsp;</td>
-						<td class="column-story">As 
-							<input id="user" name="user" list="user-personas" placeholder="persona" class="inline column-name">
-							I want <input id="feature" placeholder="feature" class="inline"> so I can <input id="reason" placeholder="benefit" class="inline">
-						</td>
-						<td class="column-team"> 
-							<input id="team" name="team" list="team-members" placeholder="Author" class="inline column-name">
+						<td class="column-story">
+							<input id="objective" name="objective" placeholder="Objective" class="" style="width:100%;">
 						</td>
 						<td> <button ng-click="addMore()" accesskey="a" class="pinhole label" style="margin-top:-5px;">Add</button> </td>
 					</tr>

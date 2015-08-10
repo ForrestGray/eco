@@ -6,6 +6,7 @@ var designApp = angular.module('designApp', [
   'ngRoute',
   'designAnimations',
   'backNavigation',
+  'navigation',
   'designControllers',
   'designFilters',
   'designServices'
@@ -21,6 +22,14 @@ designApp.config(['$routeProvider',
       when('/project', {
         templateUrl: 'partials/project.html',
         controller: 'ProjectCtrl'
+      }).
+      when('/marketing', {
+        templateUrl: 'partials/marketing.html',
+        controller: 'MarketingCtrl'
+      }).
+      when('/objectives', {
+        templateUrl: 'partials/objectives.html',
+        controller: 'ObjectivesCtrl'
       }).
       when('/stories', {
         templateUrl: 'partials/stories.html',

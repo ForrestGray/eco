@@ -17,23 +17,54 @@
 	.view-frame.ng-leave-active {
 		background:{{page.primary}};
 	}
+	/* page specific */
+	
+	.x4 {
+		width: 23%;
+		}
+	ul.columns ul li a:hover {
+		border:1px solid {{page.accent}} !important;
+		background:{{page.accent}};
+		background: transparent;
+	}
+	.container-holder {
+		width: 900px;
+	}
+	.container {
+		width: 24% !important
+	}
 </style>
 
 <div class="container-fluid" id="define">
 
-	<div class="header">
+	<div class="header" click-link="/cover">
 	  <div class="title"></div>
-	  <div class="back"><a back>Back</a></div>
 	</div>
 	
 	<div class="content">
 		<div class="subheader">
-			<h1 class="shift">{{page.title}}</h1>
-			<p class="label">Project</p>
+			<h1>
+				<span style="color:#D1C4E9;">{{page.title}}</span>
+			</h1>
+			<p class="label">
+				Project
+			</p>
 		</div>
-	<p><a href="#/persona">Persona</a></p>
-	<p><a href="#/stories">User stories</a></p>
-	<p class="footer"><a href="#/architect" class="next">Next</a>&nbsp;<span class="nav">&bull;<span style="color:{{page.primary}};">&bull;</span>&bull;&bull;&bull;</p>
+
+	<div class="container-holder" style="margin-top:2em;">
+		<div class="container x4" ng-repeat="phase in page.status">
+			<ul class="columns">
+				<li class="{{item.state}}">{{phase.name}}
+					<ul>
+						<li ng-repeat="item in phase.steps" class="{{item.status}}"><a href="{{item.url}}">{{item.step}}</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	
+	<p class="footer"></p>
 	</div>
 	<div id="canvas"></div>
 </div>

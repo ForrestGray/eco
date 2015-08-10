@@ -3,9 +3,13 @@
     "title": "WonderWidgets", 
     "primary": "#673ab7",
     "secondary": "#B39DDB",
-    "accent": "#FB8C00",
+    "accent": "#7CB342",
     "hover": "#F57C00",
-    "next": "#FF9800",
+    "next": {
+    	"color": "#123456",
+    	"page": "/stories",
+    	"label": "Add user stories"
+    },
     "members": [
     	{"name": "Aparajito",
     	"id": "1"
@@ -17,44 +21,54 @@
     	"id": "3"
     	}
 	],
+    "education": [
+        {"level": "High School",
+        "id": "1"
+        },
+        {"level": "Some college",
+        "id": "2"
+        },
+        {"level": "Associates degree",
+        "id": "3"
+        },
+        {"level": "Bachelors degree",
+        "id": "4"
+         },
+        {"level": "Masters degree",
+        "id": "5"
+         },
+        {"level": "Doctorate degree",
+        "id": "6"
+         },
+        {"level": "PhD",
+        "id": "7"
+        }
+    ],
     "personas": [
-    	{"name": "Fred",
+    	{"name": "Rodger",
+        "age": "53",
+        "education": "Masters degree",
+        "occupation": "Retired",
     	"id": "1",
-    	"description": "Description of Fred.",
-    	"goals": "Fred's goals.",
-    	"picture": "./img/personas/1.jpg"
-    	},
-    	{"name": "Jim",
-    	"id": "2",
-    	"description": "Description of Jim.",
-    	"goals": "Jim's goals.",
-    	"picture": "./img/personas/2.jpg"
-    	},
-    	{"name": "Mary",
-    	"id": "3",
-    	"description": "Description of Mary.",
-    	"goals": "Mary's goals.",
-    	"picture": "./img/personas/3.jpg"
+    	"persona": "A retired insurance underwriter, at 65 Roger is extremely active. He golfs twice a week in the summer and swims laps three times a week in the winter. He is proud of his garden and spends an hour or two each day maintaining his lawn and flower beds. Roger is also an avid fisherman.",
+        "scenario": "Roger has a slight tremor in his right hand. He is happy to report that this does not affect his golf game or his gardening. He notices that some activities, such as writing and fishing, are affected by the tremor. When he uses the computer he experiences some difficulty in using the mouse, especially if the button or link he's trying to click is fairly small.",
+    	"goals": "Roger would like to reduce tremors in his life. He is working more closely with a physical therpist to mitigate any more progression.",
+    	"team": "Aparajito",
+        "picture": "./img/personas/1.jpg"
+        
     	}
+
+        
 	],
 	"guidelines": [
-    	{"rule": "Guideline 1.",
-    	"copy": "Context."
+    	{"rule": "A persona is depicted as a specific person but is not a real individual; rather, it is synthesized from observations of many people.",
+    	"copy": "Each persona represents a significant portion of people in the real world and enables the designer to focus on a manageable and memorable cast of characters, instead of focusing on thousands of individuals. "
     	},
-    	{"rule": "Guideline 2.",
-    	"copy": "Context."
+    	{"rule": "Observe and/or interview a number of people who meet the target audience.",
+    	"copy": "Build Empathy. Internalise the persona's goals, desires and needs. See the world through their eyes to gain a genuine view of their perspective."
     	},
-    	{"rule": "Guideline 3.",
-    	"copy": "Context."
-    	},
-    	{"rule": "Guideline 4.",
-    	"copy": "Context."
-    	},
-    	{"rule": "Guideline 5.",
-    	"copy": "Context."
-    	},
-    	{"rule": "Guideline 6.",
-    	"copy": "Context."
+    	{"rule": "Identify Patterns in your interviews and/or observations.",
+    	"copy": "Build context for different stakeholders on your team to gain a clear understanding of the personas. Establish a baseline for shared knowledge that will bring your team on the same page and will likely build a better product/outcome for the User."
     	}
 	]
 }

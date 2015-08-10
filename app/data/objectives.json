@@ -8,45 +8,14 @@
     "next": {
     	"color": "#123456",
     	"page": "/cover",
-    	"label": "Brainstorming"
+    	"label": "Define funtionality"
     },
-    "members": [
-    	{"name": "Aparajito",
-    	"id": "1"
-    	},
-    	{"name": "Evan",
-    	"id": "2"
-    	},
-    	{"name": "Forrest",
-    	"id": "3"
-    	}
-	],
-    "personas": [
-    	{"name": "Fred",
-    	"id": "1"
-    	},
-    	{"name": "Jim",
-    	"id": "2"
-    	},
-    	{"name": "Mary",
-    	"id": "3"
-    	}
-	],
-    "stories": [
-    	{"feature": "attachment filtering",
-    	 "benefit": "process documents more quickly",
-    	 "user": "Mary",
-    	 "team": "Forrest"
+    "objectives": [
+    	{"goal": "Objective #1"
     	 },
-    	{"feature": "keyboard shortcuts",
-    	 "benefit": "save time",
-    	 "user": "Jim",
-    	 "team": "Evan"
+    	{"goal": "Objective #2"
     	 },
-    	{"feature": "larger type",
-    	 "benefit": "read more efficiently",
-    	 "user": "Fred",
-    	 "team": "Aparajito"
+    	{"goal": "Objective #3"
     	 }
 		],
 	"guidelines": [

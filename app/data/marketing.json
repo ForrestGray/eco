@@ -1,0 +1,47 @@
+{
+    "id": "2", 
+    "title": "WonderWidgets", 
+    "primary": "#673ab7",
+    "secondary": "#B39DDB",
+    "accent": "#7CB342",
+    "hover": "#F57C00",
+    "gdrive": "",
+    "next": {
+    	"color": "#123456",
+    	"page": "/stories",
+    	"label": "Add user stories"
+    },
+    "members": [
+    	{"name": "Aparajito",
+    	"id": "1"
+    	},
+    	{"name": "Evan",
+    	"id": "2"
+    	},
+    	{"name": "Forrest",
+    	"id": "3"
+    	}
+	],
+    "research": [
+    	{"reference": "What this is.",
+        "description": "Tell me more.",
+        "file": "./img/personas/1.xls",
+        "thumbnail": "",
+        "snippet": "",
+    	"id": "1",
+    	"class": "excel",
+    	"team": "Aparajito",
+    	}
+	],
+	"guidelines": [
+    	{"rule": "A persona is depicted as a specific person but is not a real individual; rather, it is synthesized from observations of many people.",
+    	"copy": "Each persona represents a significant portion of people in the real world and enables the designer to focus on a manageable and memorable cast of characters, instead of focusing on thousands of individuals. "
+    	},
+    	{"rule": "Observe and/or interview a number of people who meet the target audience.",
+    	"copy": "Build Empathy. Internalise the persona's goals, desires and needs. See the world through their eyes to gain a genuine view of their perspective."
+    	},
+    	{"rule": "Identify Patterns in your interviews and/or observations.",
+    	"copy": "Build context for different stakeholders on your team to gain a clear understanding of the personas. Establish a baseline for shared knowledge that will bring your team on the same page and will likely build a better product/outcome for the User."
+    	}
+	]
+}

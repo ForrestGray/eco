@@ -1,0 +1,245 @@
+<style>
+	/* dynamic values */
+	
+	.view-frame {
+		background:{{page.primary}};
+	}
+	
+	.back a, h1, .title {
+		color: {{page.secondary}} !important;
+	}
+	
+	.next {
+		background:{{page.accent}};
+	}
+	
+	.next:hover {
+		background:{{page.hover}};
+	}
+	
+	.view-frame.ng-leave {
+		background:{{page.primary}};
+	}
+	
+	.view-frame.ng-leave-active {
+		background:{{page.primary}};
+	}
+	
+	button.pinhole {
+		background-color:{{page.accent}};
+	}
+	
+	.tab-selected {
+		border-bottom:2px solid {{page.secondary}} !important;
+	}
+
+	/* other page specific */
+	
+	
+.grid-selected #grid-select .glyphicon, .list-selected #list-select .glyphicon {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-color: #D81B60;
+}
+
+	
+	
+.form-add {
+  margin-top: 2em;
+}
+
+#form-upload-image {
+  padding-left: 5px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: .25em 0 0 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+iframe {
+	position: absolute;
+}
+
+.grid-selected #drive-grid, .list-selected #drive-list {
+	opacity: 1;
+}
+
+.grid-selected #drive-list, .list-selected #drive-grid {
+	opacity: 0;
+}
+
+#drive-list, #drive-grid {
+	-webkit-transition: all .75s ease;
+	}
+
+
+img {
+  width: 190px;
+  height: 190px;
+  margin-right: 20px;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  display: inline-block;
+  width: 190px;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 12px !important;
+  text-align: left;
+}
+
+input {
+  width: 190px;
+  padding: 8px 4px;
+  margin: 2px 5px;
+  margin-top: 4px !important;
+}
+
+input[type="file"] {
+  width: 200px;
+}
+
+.inputFile {
+  position: relative;
+  display: block;
+  width: 190px;
+  height: 32px;
+  padding: 10px 0 5px 0 !important;
+  margin: .5em 5px .25em 5px;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  cursor: pointer;
+  background: #7CB342;
+  background: #E91E63;
+  border-radius: 0;
+}
+
+.inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#occupation {
+  margin-bottom: 2px;
+}
+
+textarea {
+  width: 100%;
+  height: 112px;
+  padding: 4px 4px 4px 4px;
+  margin-bottom: 3px;
+}
+
+*[contentEditable] {
+  padding: 1px;
+  margin: 1px;
+}
+
+.edit *[contentEditable] {
+  background: #F1F8E9;
+  border: 1px solid #ccc;
+}
+
+*[contentEditable="true"] {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.edit *[contentEditable]:focus {
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.edit *[contentEditable]:blur {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+</style> 
+
+<script>
+	function changeEditable(which){
+		var locked = document.getElementById(which).contentEditable;
+		if (locked){
+			// document.getElementById(which).contentEditable = "false";
+		} else {
+			// document.getElementById(which).contentEditable = "true";
+		}
+		// alert('hit');
+	}
+
+	function makeEditable(which){
+		$("#persona-"+which).addClass('edit');
+	}
+
+</script>
+
+<div class="container-fluid" id="define">
+	<div class="header">
+		<div class="title" click-link="/cover">
+		</div>
+	</div>
+	<div class="content" style="height:100%;">
+		<div class="subheader">
+			<h1 click-link="/project">
+				<span style="color:#D1C4E9;">{{page.title}}</span> Marketing Research
+			</h1>
+			<p class="label">
+				Project
+			</p>
+		</div>
+		
+		<ul class="tabs">
+			<li><a href ng-click="tab=1" ng-class="{'tab-selected': tab==1}" accesskey="1">Assets</a></li>
+			<li><a href ng-click="tab=2" ng-class="{'tab-selected': tab==2}" accesskey="2">Guidelines</a></li>
+		</ul>
+		
+		<div ng-show="tab==1" class="panel">
+			<table class="stories data" ng-init="grid=0" ng-class="{'grid-selected': grid==1, 'list-selected': grid==0}">
+				<tr>
+					
+					<td style="width:800px;position:relative;height:600px;">
+						<iframe id="drive-list" src="https://drive.google.com/embeddedfolderview?usp=sharing&id=0Bx2FgogLaDnKfk1FVVVQNnVmaS1oV1dMMjBwSWRTZ2xXVDNMV3o0Ulhib2gwbmhJZHh3b28#list" width="800" height="600" frameborder="0"></iframe>
+						<iframe id="drive-grid" src="https://drive.google.com/embeddedfolderview?usp=sharing&id=0Bx2FgogLaDnKfk1FVVVQNnVmaS1oV1dMMjBwSWRTZ2xXVDNMV3o0Ulhib2gwbmhJZHh3b28#grid" width="800" height="600" frameborder="0"></iframe>
+					</td>
+					<td>
+						<button type="button" id="grid-select" class="btn btn-icon-only btn-sm" title="View as grid" ng-click="grid=1">
+							<span class="glyphicon glyphicon-th-large"></span>
+						</button>
+						<button type="button" id="list-select" class="btn btn-icon-only btn-sm" title="View as list" ng-click="grid=0">
+							<span class="glyphicon glyphicon-th-list"></span>
+						</button>
+						<button type="button" class="btn btn-default btn-sm" id="drive" onclick="location.href='https://drive.google.com/drive/folders/0Bx2FgogLaDnKfm1FQ1lpZnZNZUw2bnd5Mk9Xb3RyRUZsc21jdEYwR2Jqc1g1RTBzazBTWXM';" accesskey="a">
+							<span class="glyphicon glyphicon-folder-open"></span> &nbsp;Drive
+						</button>
+					</td>
+					
+				</tr>
+			</table>
+
+
+			<div id="next-step" click-link="{{page.next.page}}"><span class="label">Next&nbsp;</span>{{page.next.label}}</div>
+		</div>
+		
+		<div ng-show="tab==2" class="panel">
+			<table class="guidelines data" style="max-width:650px;">
+				<tr ng-repeat="guideline in page.guidelines">
+					<td class="copy-primary guideline">{{$index+1}}.</td>
+					<td class="copy-secondary"><span class="copy-primary">{{guideline.rule}}</span>{{guideline.copy}}</td>
+				</tr>
+			</table>
+
+		</div>
+		
+		<p class="footer"></p>
+	</div>
+	<div id="canvas"></div>
+</div>

@@ -3,9 +3,115 @@
     "title": "Projects", 
     "quote": "Chaos and clutter are failures of design, not attributes of information.",
     "attribution": "Edward Tufte",
-    "primary": "#00bcd4",
-    "secondary": "#80DEEA",
-    "accent": "#FBC02D",
-    "hover": "#F9A825",
-    "next": "#2196F3"
+    "primary": "#673ab7",
+    "secondary": "#B39DDB",
+    "accent": "#7CB342",
+    "hover": "#F57C00",
+    "next": "#FF9800",
+    "pune": [
+    	{"name": "BMW",
+    	"url": "#",
+    	"status": [
+				{"name": "define",
+				"state": "done"
+				},
+				{"name": "architect",
+				"state": "done"
+				},
+				{"name": "design",
+				"state": "done"
+				},
+				{"name": "implement",
+				"state": "now"
+				}
+    		]
+    	},
+    	{"name": "Weight Watchers",
+    	"url": "#",
+    	"status": [
+				{"name": "define",
+				"state": "done"
+				},
+				{"name": "architect",
+				"state": "done"
+				},
+				{"name": "design",
+				"state": "now"
+				},
+				{"name": "implement",
+				"state": "queued"
+				}
+    		]
+    	},
+    	{"name": "Wells Fargo",
+    	"url": "#",
+    	"status": [
+				{"name": "define",
+				"state": "done"
+				},
+				{"name": "architect",
+				"state": "done"
+				},
+				{"name": "design",
+				"state": "done"
+				},
+				{"name": "implement",
+				"state": "done"
+				}
+    		]
+    	}
+	],
+    "santaclara": [
+    	{"name": "International SOS",
+    	"url": "#",
+    	"status": [
+				{"name": "define",
+				"state": "done"
+				},
+				{"name": "architect",
+				"state": "done"
+				},
+				{"name": "design",
+				"state": "now"
+				},
+				{"name": "implement",
+				"state": "queued"
+				}
+    		]
+    	},
+    	{"name": "Wells Fargo",
+    	"url": "#",
+    	"status": [
+				{"name": "define",
+				"state": "done"
+				},
+				{"name": "architect",
+				"state": "done"
+				},
+				{"name": "design",
+				"state": "done"
+				},
+				{"name": "implement",
+				"state": "done"
+				}
+    		]
+    	},
+    	{"name": "WonderWidgets",
+    	"url": "#/project",
+    	"status": [
+				{"name": "define",
+				"state": "now"
+				},
+				{"name": "architect",
+				"state": "queued"
+				},
+				{"name": "design",
+				"state": "queued"
+				},
+				{"name": "implement",
+				"state": "queued"
+				}
+    		]
+    	}
+	]
 }
